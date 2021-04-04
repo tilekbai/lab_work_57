@@ -1,0 +1,75 @@
+[
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "name": "Bell",
+    "description": "Weigth: 300g. Color: Golden.",
+    "category": "other",
+    "remainder": 33,
+    "cost": "99.99"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "name": "Ball",
+    "description": "Football ball. Color: white, yellow, red",
+    "category": "other",
+    "remainder": 99,
+    "cost": "333.00"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "name": "Cap",
+    "description": "Color: Purple. Label: Nike.",
+    "category": "clothes",
+    "remainder": 44,
+    "cost": "400.00"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "name": "Horse toy",
+    "description": "Color: red. Weight: 500g. Material: resine",
+    "category": "toys",
+    "remainder": 300,
+    "cost": "1000.00"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "name": "Book. Django 3.1",
+    "description": "Django documentation version 3.1.",
+    "category": "other",
+    "remainder": 22,
+    "cost": "555.00"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$36Cc3sk70lId$MLuE5L4pT3suiZg49TgcQbMdGi9whvjACya9ermAIBU=",
+    "last_login": "2021-04-04T16:33:19.776Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-04-04T16:32:54.362Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
