@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}All products{% endblock title %}
+<body>
+    
+    {% block menu %}
+    <li><a href="{% url 'product-list' %}">Main</a></li>
+    <li><a href="{% url 'product-add' %}">Add product</a></li>
+    {% endblock %}
+        
+    <div>
+        {% block content %}
+        {% include "partial\search_form.html" %}
+        {% for product in products %} 
+                <p><b>{{ product.name }}<br>{{ product.cost }} som</b><br>{{ product.category }} <a href="{% url 'product-view' product.id %}">More</a> <a href="{% url 'product-update' product.id %}">Update <a href="{% url 'product-delete' product.id %}">Remove</a></p> 
+        
+        {% endfor %}
+        {% include "partial/paginate.html" %}
+        {% endblock content %}
+    </div>
+    
+</body>
+</html>

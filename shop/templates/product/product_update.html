@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Update product{% endblock title %}
+<body>
+    {% block page_header %}<h1>Update product</h1>{% endblock page_header %}
+    {% block content %}<form action="{% url 'product-update' product.id %}" method="post">
+        {% include "partial/form.html" with button_text="Update" %}
+    {% endblock content %}
+    </form>
+</body>
+</html>

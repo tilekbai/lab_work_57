@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Remove product{% endblock title %}
+<body>
+    {% block page_header %}Remove product{% endblock page_header %}
+    {% block content %}
+    <form action="{% url 'product-delete' product.id %}", method="POST">
+        {% include 'partial/product_form.html' with button_text="Remove product" %}
+        <a href="{% url 'product-view' product.id %}">No</a>
+    </form>
+    {% endblock content %}     
+</body>
+</html>
